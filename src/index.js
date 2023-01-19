@@ -1,5 +1,5 @@
 const express = require("express");
-const route = require("./routes/route");
+const route = require("./route/route");
 
 const { default: mongoose } = require("mongoose");
 const app = express();
@@ -9,7 +9,7 @@ app.use(express.json());
 mongoose.set("strictQuery", false);
 mongoose
   .connect(
-    "mongodb+srv://Tirtha008:mlpnk3AhOzHztAdO@tirthacluster.psqixlb.mongodb.net/test",
+    "mongodb+srv://Tirtha008:mlpnk3AhOzHztAdO@tirthacluster.psqixlb.mongodb.net/caching",
     { useNewUrlParser: true }
   )
   .then(() => console.log("MongoDB is Connected"))
