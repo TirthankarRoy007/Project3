@@ -11,4 +11,4 @@ router.all("/*",(req,res)=>{
     return res.status(400).send({message:"invalid path"})
 })
 
-module.exports=router;
+module.exports = router;
